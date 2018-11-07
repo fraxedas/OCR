@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ReadThatText"
+             x:Class="ReadThatText.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Capture" Clicked="Capture_OnClicked"/>
+        <ToolbarItem Text="Select" Clicked="Select_OnClicked"/>
+    </ContentPage.ToolbarItems>
+
+    <ScrollView BackgroundColor="White">
+        <StackLayout Spacing="5">
+            <Image x:Name="Image"/>
+            <Label x:Name="Text"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
